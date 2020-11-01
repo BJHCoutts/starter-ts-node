@@ -1,0 +1,20 @@
+{
+  "name": "starter-ts-node",
+  "version": "0.0.1",
+  "description": "a basic frame for TS/Node",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon",
+    "start": "npm run build && node build/index.js",
+    "build": "rm -rf ./build && tsc"
+  },
+  "author": "Anthony Sylvester",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
